@@ -9,6 +9,7 @@ import { reset } from "./store/index";
 export default function App() {
   const dispatch = useDispatch();
   const handleResetClick = () => {
+    // reset() here is an action creator returning "app/reset"
     dispatch(reset());
   };
 

@@ -15,6 +15,8 @@ function MoviePlaylist() {
   // Those are functions i dispatch, logic is inside slice's reducer functions.
   const handleMovieAdd = (movie) => {
     dispatch(addMovie(movie));
+    // addMovie is an action creator, returning "movie/addMovie" to let reducer know what to do
+    // movie is the payload
   };
   const handleMovieRemove = (movie) => {
     dispatch(removeMovie(movie));

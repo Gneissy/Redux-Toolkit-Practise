@@ -14,8 +14,12 @@ function SongPlaylist() {
     return state.songs;
   });
 
+  
+  // Those are functions i dispatch, logic is inside slice's reducer functions.
   const handleSongAdd = (song) => {
     dispatch(addSong(song));
+    // addSong is an action creator, returning "song/addSong" to let reducer know what to do
+    // song is the payload
   };
   const handleSongRemove = (song) => {
     dispatch(removeSong(song));
